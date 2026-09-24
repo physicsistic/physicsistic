@@ -127,6 +127,8 @@ main > section > p strong { color: var(--text); font-weight: 500; }
 #orrery .zhaoye { fill: var(--accent); }
 #orrery .zhaoye-orbit { fill: none; stroke: var(--accent); stroke-width: 1; stroke-dasharray: 2 4; opacity: .6; }
 #orrery text { fill: var(--muted); font: 10px Inter, sans-serif; }
+#orrery .clock { font-variant-numeric: tabular-nums; opacity: .7; }
+.orrery em { display: block; margin-top: 8px; }
 #orrery .label-z { fill: var(--accent); font-weight: 600; }
 
 /* Stats */
