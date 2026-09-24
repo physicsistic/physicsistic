@@ -7,127 +7,136 @@
   <meta name="description" content="Ye Zhao, Staff Data Scientist in San Francisco.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><ellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%23888' stroke-width='2' transform='rotate(-20 16 16)'/><circle cx='16' cy='16' r='4' fill='%23888'/></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><ellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%237aa2f7' stroke-width='2' transform='rotate(-20 16 16)'/><circle cx='16' cy='16' r='4' fill='%23e6e8ee'/></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <svg class="orbit" viewBox="0 0 120 60" aria-hidden="true">
-      <ellipse cx="60" cy="30" rx="56" ry="18" transform="rotate(-12 60 30)"/>
-      <circle class="sun" cx="60" cy="30" r="5"/>
-      <circle class="rock" r="2.5">
-        <animateMotion dur="14s" repeatCount="indefinite" path="M4,30 a56,18 0 1,0 112,0 a56,18 0 1,0 -112,0" />
-      </circle>
-    </svg>
-    <h1>Ye Zhao</h1>
-    <p class="lede">Data scientist turning messy product data into clear decisions. Physics by training, consumer tech by trade.</p>
-    <p class="muted">Staff Data Scientist · San Francisco</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="spotlight" aria-hidden="true"></div>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>I'm a data scientist with over ten years in consumer tech. My work covers experimentation, forecasting, metrics and executive reporting at Patreon, Instagram, Facebook and Spotify. I studied Physics and Computer Science at Harvard.</p>
-      <p>Fun fact: I own a main-belt asteroid, <a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=25102">25102 Zhaoye</a>.</p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="entry">
-        <div class="when">2025 – Present</div>
-        <div>
-          <strong>Patreon</strong>
-          <p class="role">Staff Data Scientist</p>
-          <p>Drove data science for growth, ecosystem and strategy initiatives, presenting analyses and recommendations to the C-suite. Automated the monthly C-suite reporting process, which previously needed tens of contributors each month.</p>
-        </div>
+  <div class="layout">
+    <header class="side">
+      <div>
+        <h1>Ye Zhao</h1>
+        <p class="title">Staff Data Scientist</p>
+        <p class="lede">I turn messy product data into clear decisions. Physics by training, consumer tech by trade.</p>
+        <nav>
+          <a href="#about"><span class="bar"></span>About</a>
+          <a href="#impact"><span class="bar"></span>Impact</a>
+          <a href="#experience"><span class="bar"></span>Experience</a>
+          <a href="#background"><span class="bar"></span>Background</a>
+        </nav>
       </div>
-      <div class="entry">
-        <div class="when">2022 – 2025</div>
-        <div>
-          <strong>Meta · Instagram Ecosystems</strong>
-          <p class="role">Staff Lead Data Scientist</p>
-          <p>Owned Instagram's engagement and revenue forecasting and its ecosystem health monitoring. Led executive and earnings reporting on core metrics for Meta's CFO and CPO. Served as the team's experimentation subject-matter expert.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">2019 – 2022</div>
-        <div>
-          <strong>Meta · Instagram Product Foundation</strong>
-          <p class="role">Senior Data Scientist</p>
-          <p>Led experiment design and rollout for the tab bar redesign that introduced the Reels and Shop tabs. Built the notifications attribution framework, which let the team drive a third of Instagram's daily active user growth.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">2018 – 2019</div>
-        <div>
-          <strong>Meta · Facebook Stories</strong>
-          <p class="role">Data Scientist</p>
-          <p>Launched Birthday Stories, a new product built from scratch that beat its engagement goals threefold.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">2015 – 2018</div>
-        <div>
-          <strong>Spotify · Advertising Platform</strong>
-          <p class="role">Data Scientist</p>
-          <p>Led data science for Spotify Ad Studio, covering activation funnel metrics, advertiser segmentation and product insights.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">2014 – 2015</div>
-        <div>
-          <strong>Kenshoo</strong>
-          <p class="role">Research Analyst</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">2012</div>
-        <div>
-          <strong>Google</strong>
-          <p class="role">Associate Product Manager Intern</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="entry">
-        <div class="when">2009 – 2013</div>
-        <div>
-          <strong>Harvard University</strong>
-          <p class="role">Physics &amp; Computer Science</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="tags">
-        <li>Python</li><li>R</li><li>SQL</li><li>JavaScript</li><li>BigQuery</li><li>Hive</li>
-      </ul>
-      <ul class="tags">
-        <li>Experiment design</li><li>Metric guardrails</li><li>Attribution</li><li>Forecasting</li>
-      </ul>
-      <p class="muted">English · Mandarin Chinese (native)</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:zhaoyeseco@gmail.com">Email</a> ·
-        <a href="https://www.linkedin.com/in/physicsistic/">LinkedIn</a> ·
+      <div class="links">
+        <a href="mailto:zhaoyeseco@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/physicsistic/">LinkedIn</a>
         <a href="https://github.com/physicsistic">GitHub</a>
-      </p>
-    </section>
-  </main>
+      </div>
+    </header>
 
-  <footer>© 2026 Ye Zhao</footer>
+    <main>
+      <section id="about" class="reveal">
+        <h2>About</h2>
+        <p>I'm a data scientist based in San Francisco with over ten years in consumer tech. I've led experimentation, forecasting and executive reporting at <strong>Patreon</strong>, <strong>Instagram</strong>, <strong>Facebook</strong> and <strong>Spotify</strong>.</p>
+        <p>I studied Physics and Computer Science at Harvard. I still think like a physicist: find the simplest model that explains the data, then test it.</p>
+
+        <figure class="orrery">
+          <svg id="orrery" viewBox="-140 -140 280 280" role="img" aria-label="Diagram of the inner solar system with asteroid 25102 Zhaoye orbiting in the main belt"></svg>
+          <figcaption>
+            <span class="kicker">Fun fact</span>
+            I own a main-belt asteroid: <a href="https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=25102">25102 Zhaoye</a>. It's the highlighted dot, orbiting between Mars and Jupiter. <em>Not to scale.</em>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="impact" class="reveal">
+        <h2>Impact</h2>
+        <div class="stats">
+          <div class="stat"><span class="num">⅓</span><span>of Instagram's daily active user growth, driven by the notifications team I supported</span></div>
+          <div class="stat"><span class="num">500+</span><span>hours of manual work saved per quarter by rebuilding forecasting infrastructure</span></div>
+          <div class="stat"><span class="num">3×</span><span>engagement goals beaten by Birthday Stories, a product built from scratch</span></div>
+          <div class="stat"><span class="num">10+</span><span>years in data science, from ads to social to creator platforms</span></div>
+        </div>
+      </section>
+
+      <section id="experience" class="reveal">
+        <h2>Experience</h2>
+        <ol class="jobs">
+          <li class="job">
+            <div class="when">2025 — Now</div>
+            <div>
+              <h3>Staff Data Scientist · Patreon</h3>
+              <p>Drove data science for growth, ecosystem and strategy initiatives, presenting to the C-suite. Automated monthly C-suite reporting that used to need tens of contributors.</p>
+              <ul class="tags"><li>Growth</li><li>Strategy</li><li>Automation</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="when">2022 — 2025</div>
+            <div>
+              <h3>Staff Lead Data Scientist · Instagram</h3>
+              <p>Owned engagement and revenue forecasting and ecosystem health monitoring. Led earnings reporting for Meta's CFO and CPO. Instagram's experimentation subject-matter expert.</p>
+              <ul class="tags"><li>Forecasting</li><li>Exec reporting</li><li>Experimentation</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="when">2019 — 2022</div>
+            <div>
+              <h3>Senior Data Scientist · Instagram</h3>
+              <p>Led experiment design for the tab bar redesign that introduced Reels and Shop. Built the notifications attribution framework and shaped decisions on dark mode and Instagram Lite.</p>
+              <ul class="tags"><li>Experiment design</li><li>Attribution</li><li>Product strategy</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="when">2018 — 2019</div>
+            <div>
+              <h3>Data Scientist · Facebook Stories</h3>
+              <p>Launched Birthday Stories from zero to one and coordinated its global launch.</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="when">2015 — 2018</div>
+            <div>
+              <h3>Data Scientist · Spotify</h3>
+              <p>Led data science for Spotify Ad Studio: activation funnels, advertiser segmentation and product insights.</p>
+            </div>
+          </li>
+          <li class="job compact">
+            <div class="when">2014 — 2015</div>
+            <div><h3>Research Analyst · Kenshoo</h3></div>
+          </li>
+          <li class="job compact">
+            <div class="when">2012</div>
+            <div><h3>APM Intern · Google</h3></div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="background" class="reveal">
+        <h2>Background</h2>
+        <div class="bg-grid">
+          <div>
+            <h3>Education</h3>
+            <p>Harvard University<br><span class="muted">Physics &amp; Computer Science, 2013</span></p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <p class="muted">Python, R, SQL, JavaScript, BigQuery, Hive</p>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <p class="muted">English, Mandarin Chinese (native)</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p class="sayhi">Want to talk data, experiments or asteroids? <a href="mailto:zhaoyeseco@gmail.com">Say hello →</a></p>
+        <p class="muted small">© 2026 Ye Zhao</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
